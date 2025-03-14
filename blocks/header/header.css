@@ -4,6 +4,7 @@ header .nav-wrapper {
   width: 100%;
   z-index: 2;
   position: fixed;
+  padding: 12px 0;
 }
 
 header nav {
@@ -145,7 +146,7 @@ header .nav-brand {
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 111px;
   height: auto;
 }
 
@@ -171,6 +172,8 @@ header nav .nav-sections ul {
 
 header nav .nav-sections ul > li {
   font-weight: 500;
+  color: #1e1852;
+  font-family: Montserrat, sans-serif;
 }
 
 header nav .nav-sections ul > li > ul {
@@ -191,6 +194,15 @@ header nav .nav-sections ul > li > ul > li {
   header nav[aria-expanded='true'] .nav-sections {
     align-self: unset;
   }
+
+
+header nav .nav-sections li.nav-drop:hover::before {
+    position: absolute;
+    content: '';
+    border-bottom: 3px solid #1e1852;
+    width: 100%;
+    bottom: -31px;
+}
 
   header nav .nav-sections .nav-drop {
     position: relative;
