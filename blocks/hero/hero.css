@@ -13,8 +13,10 @@
 
 
 .hero .button{
-  color: #1e1852;
-  background: #fff;
+  color: #1e1852 !important;
+  background: #fff !important;
+  font-family: Montserrat, sans-serif !important;
+  font-size: 1rem;
 }
 
 .hero h1 {
