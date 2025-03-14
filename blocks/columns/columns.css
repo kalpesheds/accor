@@ -5,6 +5,12 @@
 
 .columns img {
   width: 100%;
+  border-radius: 15px;
+}
+
+.columns h4{
+  margin-top: 0;
+  font-size: 1.125rem !important;
 }
 
 .columns > div > div {
