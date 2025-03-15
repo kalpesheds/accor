@@ -1,0 +1,4 @@
+.pic-overlay picture{
+    position:absolute;
+    z-index:-1;
+}
