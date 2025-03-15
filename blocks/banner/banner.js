@@ -13,7 +13,7 @@ export default function decorate(block) {
             return child !== el;
         })
 
-        content.append(bannerDiv);  
+        content.innerHTML = bannerDiv;  
         block.append(content)       
             // while (row.firstElementChild) content.append(row.firstElementChild);
             //     [...content.children].forEach((div) => {
