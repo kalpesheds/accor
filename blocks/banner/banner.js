@@ -1,11 +1,11 @@
 export default function decorate(block) {
     const cols = [...block.firstElementChild.children];
     block.classList.add(`banner-${cols.length}-cols`);
-    const parentDiv = document.querySelector("div");
+    
 
     [...block.children].forEach((row) => {
         [...row.children].forEach((col) => {
-        
+            const parentDiv = document.querySelector("div");
         const bannerImageDiv = document.createElement("div");
         bannerImageDiv.classList.add("banner-image");
 
@@ -18,8 +18,8 @@ export default function decorate(block) {
             bannerImageDiv.appendChild(bannerImage);
         }
 
-        content.innerHTML = bannerDiv;  
-        block.append(content);
+        // content.innerHTML = bannerDiv;  
+        // block.append(content);
         const parentDiv = document.querySelector("div");
         while (parentDiv.firstChild) {
             if (parentDiv.firstChild !== bannerImageDiv) {
