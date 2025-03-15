@@ -3,7 +3,7 @@ export default function decorate(block) {
     block.classList.add(`banner-${cols.length}-cols`);
   
     // setup image columns
-    const picWrapper = row.createElement('div');  
+    const picWrapper = document.createElement('div');  
     picWrapper.className = 'pic-overlay'; 
     [...block.children].forEach((row) => {
         const content = document.createElement('div');           
