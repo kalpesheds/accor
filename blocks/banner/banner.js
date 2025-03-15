@@ -12,12 +12,13 @@ export default function decorate(block) {
         const content = document.createElement('div');
         content.className = 'banner-content';         
         const el = document.querySelector('.banner-image');
-        const bannerDiv = Array.from(imageDiv.parentNode.children);
+        let bannerDiv = Array.from(imageDiv.parentNode.children);
         bannerDiv= bannerDiv.filter(function(child){
             return child !== el;
         })
 
-        content.append(bannerDiv);          
+        content.append(bannerDiv);   
+        picWrapper.append(content);         
             // while (row.firstElementChild) content.append(row.firstElementChild);
             //     [...content.children].forEach((div) => {
             //     if (div.children.length === 1 && (div.querySelector('picture') || div.querySelector('p picture'))) div.className = 'banner-image';
