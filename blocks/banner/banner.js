@@ -10,8 +10,13 @@ export default function decorate(block) {
         const imageDiv = col.querySelector('picture');
         imageDiv.parentNode.className = 'banner-image';
         const content = document.createElement('div');
-        content.className = 'banner-content';   
-        const bannerDiv = imageDiv.parentNode.siblings;
+        content.className = 'banner-content';         
+        const el = document.querySelector('.banner-image');
+        const bannerDiv = Array.from(imageDiv.parentNode.children);
+        bannerDiv= bannerDiv.filter(function(child){
+            return child !== el;
+        })
+
         content.append(bannerDiv);   
         picWrapper.append(content);         
             // while (row.firstElementChild) content.append(row.firstElementChild);
