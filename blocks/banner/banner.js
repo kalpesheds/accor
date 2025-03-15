@@ -12,7 +12,7 @@ export default function decorate(block) {
         const content = document.createElement('div');
         content.className = 'banner-content';         
         const el = document.querySelector('.banner-image');
-        let bannerDiv = Array.from(imageDiv.parentNode.children);
+        let bannerDiv = Array.from(imageDiv.parentNode.parentNode..children);
         bannerDiv= bannerDiv.filter(function(child){
             return child !== el;
         })
