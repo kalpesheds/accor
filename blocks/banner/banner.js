@@ -17,8 +17,7 @@ export default function decorate(block) {
             return child !== el;
         })
 
-        content.append(bannerDiv);   
-        picWrapper.append(content);         
+        content.append(bannerDiv);          
             // while (row.firstElementChild) content.append(row.firstElementChild);
             //     [...content.children].forEach((div) => {
             //     if (div.children.length === 1 && (div.querySelector('picture') || div.querySelector('p picture'))) div.className = 'banner-image';
