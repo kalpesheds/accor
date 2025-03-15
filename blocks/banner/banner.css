@@ -2,3 +2,14 @@
     position:absolute;
     z-index:-1;
 }
+.banner-content{
+    padding: 2rem 2rem 0;
+    box-sizing: border-box;
+    border: 0.25rem solid #fff;
+    border-bottom-width: 0;
+    width: 100%;
+}
+.banner-content p,.banner-content h2,.banner-content li{
+    color:#fff;
+    padding-bottom:.25rem;  
+}

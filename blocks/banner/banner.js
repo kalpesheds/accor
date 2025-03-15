@@ -7,7 +7,7 @@ export default function decorate(block) {
         [...row.children].forEach((col) => {
             const parentDiv = document.querySelector(".banner");
         const bannerImageDiv = document.createElement("div");
-        bannerImageDiv.classList.add("banner-image");
+        bannerImageDiv.classList.add("bannerImageDiv");
 
         const bannerContentDiv = document.createElement("div");
         bannerContentDiv.classList.add("banner-content");
