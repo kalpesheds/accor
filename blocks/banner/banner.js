@@ -1,10 +1,6 @@
 export default function decorate(block) {
     const cols = [...block.firstElementChild.children];
     block.classList.add(`banner-${cols.length}-cols`);
-  
-    // setup image columns
-    const picWrapper = document.createElement('div');  
-    picWrapper.className = 'pic-overlay'; 
     [...block.children].forEach((row) => {
         [...row.children].forEach((col) => {
         const imageDiv = col.querySelector('picture');
@@ -17,8 +13,8 @@ export default function decorate(block) {
             return child !== el;
         })
 
-        content.append(bannerDiv);   
-        picWrapper.append(content);         
+        content.append(bannerDiv);  
+        block.append(content)       
             // while (row.firstElementChild) content.append(row.firstElementChild);
             //     [...content.children].forEach((div) => {
             //     if (div.children.length === 1 && (div.querySelector('picture') || div.querySelector('p picture'))) div.className = 'banner-image';

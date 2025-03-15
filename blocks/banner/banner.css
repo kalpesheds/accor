@@ -1,4 +1,4 @@
-.pic-overlay picture{
+.banner-image picture{
     position:absolute;
     z-index:-1;
 }
