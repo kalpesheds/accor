@@ -2,13 +2,11 @@ export default function decorate(block) {
     const cols = [...block.firstElementChild.children];
     block.classList.add(`banner-${cols.length}-cols`);
     
-
+    const parentDiv = document.querySelector(`.banner.banner-${cols.length}-cols`);
     [...block.children].forEach((row) => {
-        [...row.children].forEach((col) => {
-            const parentDiv = document.querySelector(".banner");
+        [...row.children].forEach((col) => {        
         const bannerImageDiv = document.createElement("div");
         bannerImageDiv.classList.add("bannerImageDiv");
-
         const bannerContentDiv = document.createElement("div");
         bannerContentDiv.classList.add("banner-content");
         const imageDiv = col.querySelector('picture');
@@ -22,12 +20,15 @@ export default function decorate(block) {
                 bannerContentDiv.appendChild(parentDiv.firstChild);
             }
         }
-                
+        const wrapperDiv = document.createElement("div");
+        wrapperDiv.classList.add('bannerSection');
+        wrapperDiv.appendChild(bannerImageDiv)
+        wrapperDiv.appendChild(bannerContentDiv);     
         parentDiv.innerHTML = "";
-        parentDiv.appendChild(bannerImageDiv);
-        parentDiv.appendChild(bannerContentDiv);   
-        block.append(parentDiv);    
+        parentDiv.appendChild(wrapperDiv);  
+               
       });
     })
+    block.append(parentDiv);
   }
   

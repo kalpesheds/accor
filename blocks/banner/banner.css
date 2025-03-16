@@ -38,7 +38,7 @@
     bottom: auto;
     left: 0;
     right: auto;
-    transform: translateY(-0.05rem);
+    /* transform: translateY(-0.05rem); */
 }
 .banner-content p,.banner-content h2{
     color:#fff;
@@ -53,7 +53,7 @@
 }
 .banner-content li:before{
     color: #fff;
-    content: "";
+    content: ' \2780';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     vertical-align: middle;
