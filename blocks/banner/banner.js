@@ -23,12 +23,11 @@ export default function decorate(block) {
         const wrapperDiv = document.createElement("div");
         wrapperDiv.classList.add('bannerSection');
         wrapperDiv.appendChild(bannerImageDiv)
-        wrapperDiv.appendChild(bannerContentDiv);     
-        parentDiv.innerHTML = "";
-        parentDiv.appendChild(wrapperDiv);  
-               
+        wrapperDiv.appendChild(bannerContentDiv);   
       });
     })
+    parentDiv.innerHTML = "";
+    parentDiv.appendChild(wrapperDiv);
     block.append(parentDiv);
   }
   
