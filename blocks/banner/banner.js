@@ -17,9 +17,6 @@ export default function decorate(block) {
         if (bannerImage) {
             bannerImageDiv.appendChild(bannerImage);
         }
-
-        // content.innerHTML = bannerDiv;  
-        // block.append(content);
         while (parentDiv.firstChild) {
             if (parentDiv.firstChild !== bannerImageDiv) {
                 bannerContentDiv.appendChild(parentDiv.firstChild);
