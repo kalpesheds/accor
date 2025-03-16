@@ -13,6 +13,32 @@ footer .footer p {
   margin: 0;
 }
 
+.footer-wrapper h1{
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #1e1852;
+}
+
+.footer-wrapper ul{
+  margin: 0;
+  padding: 0;
+}
+.footer-wrapper ul li{
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-top: 12px;
+  list-style-type: none;
+  color: #1e1852;
+}
+
+.footer-wrapper .columns-4-cols div:first-of-type {
+  align-items: start;
+}
+
 @media (width >= 900px) {
   footer .footer > div {
     padding: 40px 32px 24px;
