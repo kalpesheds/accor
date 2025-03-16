@@ -16,6 +16,7 @@
 }
 .banner-image{
     width:100%;
+    aspect-ratio: 2.6 !important;
 }
 .banner-image picture{
     flex-grow: 1;
@@ -24,6 +25,10 @@
 }
 .banner-image picture img{
     width:100%;
+    background-color: rgba(31,30,36,0.16);
+    background-size: cover;
+    object-fit: cover;
+    height: 100%;
 }
 .button-container{
     padding:1rem 1rem 0;
