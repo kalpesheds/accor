@@ -32,7 +32,7 @@
     border-bottom-width: 0;
     width: 100%;
 }
-.banner-content >div>div :after{
+.banner-content > div > div:after{
     content: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='41' height='34' viewBox='0 0 41 34' fill='none'><path d='M4 23.7108C2.62128 26.5905 1.52142 29.8368 0.71167 33.4757L0.709503 33.4854L0 33.4757V0.777863H4V15.9294C6.3134 12.7795 9.07433 10.1259 12.2803 7.95984C19.0594 3.37976 27.4599 1.23062 37 0.777832C39.5 0.777832 41 0.777832 41 0.777832V4.77783C23.2394 4.77783 10.5106 10.1118 4 23.7108Z' fill='white'/></svg>");
     position: absolute;
     bottom: auto;
