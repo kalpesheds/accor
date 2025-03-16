@@ -3,6 +3,8 @@ export default function decorate(block) {
     block.classList.add(`banner-${cols.length}-cols`);
     
     const parentDiv = document.querySelector(`.banner.banner-${cols.length}-cols`);
+    const wrapperDiv = document.createElement("div");
+    wrapperDiv.classList.add('bannerSection');
     [...block.children].forEach((row) => {
         [...row.children].forEach((col) => {        
         const bannerImageDiv = document.createElement("div");
@@ -20,8 +22,7 @@ export default function decorate(block) {
                 bannerContentDiv.appendChild(parentDiv.firstChild);
             }
         }
-        const wrapperDiv = document.createElement("div");
-        wrapperDiv.classList.add('bannerSection');
+        
         wrapperDiv.appendChild(bannerImageDiv)
         wrapperDiv.appendChild(bannerContentDiv);   
       });
