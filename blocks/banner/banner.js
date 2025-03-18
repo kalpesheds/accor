@@ -31,4 +31,4 @@ export default function decorate(block) {
     parentDiv.appendChild(wrapperDiv);
     block.append(parentDiv);
   }
-  
+   
