@@ -52,4 +52,4 @@ export default async function decorate(block) {
       block.closest('.fragment').replaceWith(...fragment.childNodes);
     }
   }
-}
+} 
